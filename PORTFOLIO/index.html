@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniport 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body id="topo">
+    <nav>
+      <a href="#topo">Sobre mim</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencias">Experiências</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <main>
+      <section id="apresentacao">
+        <div id="titulo_img">
+          <img src="images/aly_8753_zoom3.png" alt="Foto de Arthur" />
+          <header>
+            <h1>Arthur Jerônimo</h1>
+            <p>UI/UX Designer & Desenvolvedor Web</p>
+            <i class="fa-brands fa-html5 fa-2x"></i>
+            <i class="fa-brands fa-css3 fa-2x"></i>
+            <i class="fa-brands fa-python fa-2x"></i>
+            <i class="fa-brands fa-github fa-2x"></i>
+            <i class="fa-brands fa-js fa-2x"></i>
+          </header>
+        </div>
+        <h2>Confira meu portifólio pessoal, criado em HTML e CSS!</h2>
+        <a id="baixar" href="profile.pdf" download>Baixar meu portifólio</a>
+      </section>
+      <div id="pagina">
+        <section id="sobre">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou estudante do curso de <strong>Sistemas para Internet</strong>,
+            com foco em Desenvolvimento Web e UI/UX Design. Tenho experiência na
+            criação de interfaces web modernas, utilizando HTML, CSS e
+            JavaScript, sempre buscando alinhar
+            <strong>estética, usabilidade e desempenho.</strong> Também possuo
+            interesse por <strong>prototipação</strong>, utilizando ferramenas
+            como o Figma e <strong>automação de processos</strong>, utilizando a
+            linguagem Python.
+          </p>
+        </section>
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+          <div class="habilidades-grid">
+            <div class="habilidade">
+              <i class="fa-brands fa-python fa-3x"></i>
+              <h3>Python</h3>
+              <p>
+                Automação, Scripts, desenvolvimento Back-End e desenvolvimento
+                de bots.
+              </p>
+            </div>
+            <div class="habilidade">
+              <i class="fa-brands fa-js fa-3x"></i>
+              <h3>JavaScript</h3>
+              <p>
+                Desenvolvimento Back-End e outras aplicações em desenvolvimento
+                Web.
+              </p>
+            </div>
+            <div class="habilidade">
+              <i class="fa-brands fa-github fa-3x"></i>
+              <h3>Git & GitHub</h3>
+              <p>
+                Versionamento de código, colaboração e controle de projetos.
+              </p>
+            </div>
+            <div class="habilidade">
+              <i class="fa-solid fa-robot fa-3x"></i>
+              <h3>IA Generativa</h3>
+              <p>
+                Utilização de APIs como OPENAI para aplicações práticas e bots.
+              </p>
+            </div>
+            <div class="habilidade">
+              <i class="fa-brands fa-figma fa-3x"></i>
+              <h3>FIGMA</h3>
+              <p>
+                Prototipação e Desenvolvimento de modelos de Interfaces Web.
+              </p>
+            </div>
+            <div class="habilidade">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <h3>HTML 5</h3>
+              <p>Desenvolvimento de interfaces Web.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <div>
+            <h3>Chatbot integrado com IA Generativa</h3>
+            <p>
+              Projeto de chatbot de organização pessoal integrado com a API da
+              Openai
+            </p>
+            <a href="https://github.com/arthurjleite" target="_blank"
+              >Ver projeto</a
+            >
+          </div>
+          <div>
+            <h3>Loja de terminal em Python</h3>
+            <p>
+              Projeto de loja que funciona no terminal do VS Code, criado com
+              Python
+            </p>
+            <a href="https://github.com/arthurjleite" target="_blank"
+              >Ver projeto</a
+            >
+          </div>
+          <div>
+            <h3>Jogo caça ao tesouro em Python</h3>
+            <p>
+              Projeto de jogo que funciona no terminal do VS Code, criado com
+              Python
+            </p>
+            <a href="https://github.com/arthurjleite" target="_blank"
+              >Ver projeto</a
+            >
+          </div>
+        </section>
+        <section id="experiencias">
+          <h2>Experiências</h2>
+          <ul>
+            <li>
+              Estudante do curso de Sistemas para Internet na faculdade Uniesp
+            </li>
+            <li>Experiência extra-curricular como DJ em João Pessoa</li>
+            <li>Assistente de auditoria de condomínios</li>
+          </ul>
+        </section>
+        <section id="contato">
+          <h2>Contato</h2>
+          <p>Email: arthurjleite@gmail.com</p>
+          <p>
+            Linkedin:
+            <a
+              href="https://www.linkedin.com/in/arthurjeronimo/"
+              target="_blank"
+              >Arthur Jerônimo</a
+            >
+          </p>
+          <p>
+            Github:
+            <a href="https://github.com/arthurjleite" target="_blank"
+              >arthurjleite</a
+            >
+          </p>
+          <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" /><br />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              row="4"
+              cols="50"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
