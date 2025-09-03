@@ -19,11 +19,12 @@
       <a href="#contato">Contato</a>
     </nav>
     <main>
+      <div class="wrapper">
       <section id="apresentacao">
         <div id="titulo_img">
           <img src="images/aly_8753_zoom3.png" alt="Foto de Arthur" />
           <header>
-            <h1>Arthur Jerônimo</h1>
+            <h1>Arthur Benevides</h1>
             <p>UI/UX Designer & Desenvolvedor Web</p>
             <i class="fa-brands fa-html5 fa-2x"></i>
             <i class="fa-brands fa-css3 fa-2x"></i>
@@ -33,7 +34,7 @@
           </header>
         </div>
         <h2>Confira meu portifólio pessoal, criado em HTML e CSS!</h2>
-        <a id="baixar" href="profile.pdf" download>Baixar meu portifólio</a>
+        <a id="baixar" href="images/Profile.pdf" download>Baixar meu portifólio</a>
       </section>
       <div id="pagina">
         <section id="sobre">
@@ -100,79 +101,103 @@
         <section id="projetos">
           <h2>Projetos</h2>
           <div>
-            <h3>Chatbot integrado com IA Generativa</h3>
-            <p>
-              Projeto de chatbot de organização pessoal integrado com a API da
-              Openai
-            </p>
-            <a href="https://github.com/arthurjleite" target="_blank"
-              >Ver projeto</a
-            >
+            <a href="https://github.com/arthurjleite/Chatbot_Openai" target="_blank">
+              <h3>Chatbot integrado com IA Generativa</h3>
+              <p>
+                Projeto de chatbot de organização pessoal integrado com a API da
+                Openai.
+              </p>
+            </a>
           </div>
           <div>
-            <h3>Loja de terminal em Python</h3>
-            <p>
-              Projeto de loja que funciona no terminal do VS Code, criado com
-              Python
-            </p>
-            <a href="https://github.com/arthurjleite" target="_blank"
-              >Ver projeto</a
-            >
+            <a href="https://github.com/arthurjleite/Portfolio" target="_blank">
+              <h3>Loja de terminal em Python</h3>
+              <p>
+                Projeto de loja que funciona no terminal do VS Code, criado com
+                Python
+              </p>
+            </a>
           </div>
           <div>
-            <h3>Jogo caça ao tesouro em Python</h3>
-            <p>
-              Projeto de jogo que funciona no terminal do VS Code, criado com
-              Python
-            </p>
-            <a href="https://github.com/arthurjleite" target="_blank"
-              >Ver projeto</a
-            >
+            <a href="https://github.com/arthurjleite/Portfolio" target="_blank">
+              <h3>Jogo caça ao tesouro em Python</h3>
+              <p>
+                Projeto de jogo que funciona no terminal do VS Code, criado com
+                Python
+              </p>
+            </a>
           </div>
         </section>
+
         <section id="experiencias">
           <h2>Experiências</h2>
           <ul>
             <li>
-              Estudante do curso de Sistemas para Internet na faculdade Uniesp
+              <i class="fa-solid fa-graduation-cap"></i> Estudante do curso de
+              Sistemas para Internet no centro universitário Uniesp.
             </li>
-            <li>Experiência extra-curricular como DJ em João Pessoa</li>
-            <li>Assistente de auditoria de condomínios</li>
+            <li>
+              <i class="fa-solid fa-headphones"></i></i> Experiência extra-curricular
+              como DJ e produtor musical em João Pessoa-PB.
+            </li>
+            <li>
+              <i class="fa-solid fa-clipboard-check"></i> Assistente de
+              auditoria de condomínios.
+            </li>
           </ul>
         </section>
+
+
         <section id="contato">
           <h2>Contato</h2>
-          <p>Email: arthurjleite@gmail.com</p>
-          <p>
-            Linkedin:
-            <a
-              href="https://www.linkedin.com/in/arthurjeronimo/"
-              target="_blank"
-              >Arthur Jerônimo</a
-            >
-          </p>
-          <p>
-            Github:
-            <a href="https://github.com/arthurjleite" target="_blank"
-              >arthurjleite</a
-            >
-          </p>
-          <form>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" /><br />
+          <div class="contato-grid">
 
-            <label for="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              row="4"
-              cols="50"
-            ></textarea>
+            <a href="mailto:arthurjleite@gmail.com" target="_blank">              
+              <div class="contato-item">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <p>arthurjleite@gmail.com</p>
+              </div></a>
 
+            <a href="https://wa.me/5583987264242?text=Olá%20Arthur,%20estou%20vendo%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você!" target="_blank">
+           
+
+              <div class="contato-item">
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <p>(83) 98726-4242</p>
+              </div></a>
+
+            <a href="https://www.linkedin.com/in/arthurjeronimo/" target="_blank">
+              <div class="contato-item">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <p>Arthur Jerônimo</p>
+            </div></a>
+
+            <a href="https://github.com/arthurjleite" target="_blank">
+              <div class="contato-item">
+                <i class="fa-brands fa-github fa-2x"></i>
+                <p>arthurjleite</p>
+            </div></a>
+          </div>
+        </section>
+
+        <section id="mensagem">
+          <h2>Enviar mensagem</h2>
+          <form action="https://formsubmit.co/arthurjleite@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/msg_enviada.html">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" />
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
             <button type="submit">Enviar</button>
           </form>
         </section>
+
       </div>
     </main>
+    <footer>
+        <p>&copy; 2025 Arthur Benevides. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
